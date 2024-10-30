@@ -1,0 +1,126 @@
+/**
+ * This file is rendered within Classic Editor TinyMCE to style the clickable block preview.
+ */
+
+.mv-shortcode-placeholder {
+  position: relative;
+  color: #fff;
+  background: #000;
+  z-index: 0;
+  padding: 20px;
+  max-width: 768px;
+}
+
+.mv-shortcode-placeholder .mv-shortcode-heading {
+  color: #fff;
+}
+
+.mv-shortcode-placeholder .mceItem-left {
+  position: relative;
+  z-index: 5;
+}
+
+.mv-shortcode-placeholder .mv-thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: .6;
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+
+.mv-shortcode-heading {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', 'OpenSans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.mv-shortcode-description {
+  margin: 0.25em 0 1em;
+  font-family: 'Open Sans', 'OpenSans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.mv-shortcode-button {
+  display: flex;
+  width: 100%;
+  max-width: 250px;
+  margin: 0;
+  padding: 8px;
+  border: solid 2px #41a4a9;
+  background: #41a4a9;
+  cursor: pointer;
+}
+
+.mv-shortcode-button:hover,
+.mv-shortcode-button:focus,
+.mv-shortcode-button:active {
+  background: #41a4a9 !important;
+}
+
+.mv-logo {
+  width: 30px;
+  height: 34px;
+
+  flex: 0 0 40px;
+}
+
+.mv-content {
+  padding-left: 10px;
+  color: #fff;
+  font-family: 'Open Sans', 'OpenSans', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 34px;
+  flex: 1;
+}
+
+.mv-delete {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 5px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* CSS specific to iOS devices */
+@supports (-webkit-overflow-scrolling: touch) {
+  /* React requires this to make buttons work, so it may help in the future */
+  .mv-shortcode-button * {
+    cursor: pointer;
+  }
+  .mv-content {
+    line-height: 21px;
+  }
+  .mv-delete {
+    display: none;
+  }
+}
+
+.mv-delete .dashicons {
+  padding-top: 2px;
+  padding-left: 3px;
+  position: absolute;
+  top: 0;
+}
+
+.mv-shortcode-placeholder:hover .mv-delete,
+.mv-shortcode-placeholder:focus .mv-delete,
+.mv-shortcode-placeholder:active .mv-delete {
+  display: block;
+}

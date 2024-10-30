@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => 'mediavine/mediavine-control-panel',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => '30ff8c6efcd51918a6f55f9f2b6d36f19ad9c4ef',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => false,
+    ),
+    'versions' => array(
+        'exussum12/coverage-checker' => array(
+            'pretty_version' => '1.0.2',
+            'version' => '1.0.2.0',
+            'reference' => '544984601cf563003b36c8ed9a5a61a40daafa93',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../exussum12/coverage-checker',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'mediavine/mediavine-control-panel' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => '30ff8c6efcd51918a6f55f9f2b6d36f19ad9c4ef',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'nikic/php-parser' => array(
+            'pretty_version' => 'v4.13.2',
+            'version' => '4.13.2.0',
+            'reference' => '210577fe3cf7badcc5814d99455df46564f3c077',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../nikic/php-parser',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

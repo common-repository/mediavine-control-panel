@@ -1,0 +1,134 @@
+.option-group {
+	width: 80%;
+	margin-left: 2%;
+}
+
+.mvoption {
+	clear: both;
+	width: 100%;
+	border: 1px solid #333;
+	border-top: none;
+	box-sizing: border-box;
+	padding: 25px;
+}
+
+.mvoption:first-of-type {
+	border-top: 1px solid #333;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.mvoption:last-of-type {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.option-group > .notice {
+	margin-bottom: 15px;
+}
+
+.mvoption .option {
+	display: inline-block;
+	max-width: 50%;
+	min-width: 300px;
+}
+
+.mvoption .description {
+	display: inline-block;
+	width: 49%;
+	font-style: italic;
+}
+
+.mvoption > div {
+	vertical-align: text-top;
+}
+
+.mvoption .tag, .option-group h3 > .tag {
+	font-size: 11px;
+	background: #ff0000;
+	display: inline-block;
+	color: #fff;
+	border-radius: 2px;
+	padding: 2px 10px;
+	margin-left: 10px;
+	box-shadow: -2px 2px #990000, 0px 1px #990000, -1px 0px #990000;
+}
+
+.mvoption label {
+	font-size: 16px;
+}
+
+.mvoption label.opt {
+	display: block;
+	margin-left: 1px;
+	cursor: default;
+}
+
+.mvoption input[type=number] {
+	width: 50px;
+}
+
+.mvoption input[type=text], .mvoption input[type=number] {
+	border-radius: 1px;
+	line-height: 24px;
+	margin-top: 5px;
+}
+
+.launch-mode-group {
+	margin-bottom: 1em;
+}
+
+.mcp-space-bottom {
+	margin-bottom: 20px;
+}
+
+.mcp-space-top {
+	margin-top: 20px;
+}
+
+.mvoption .mcp-full-width-option {
+	width: 100%;
+	max-width: 100%;
+	margin-top: 10px;
+}
+
+.mvoption .mcp-full-width-option > div {
+	width: 100%;
+	text-align: center
+}
+
+.mcp-danger-zone {
+	border: 1px solid red;
+	padding: 0 10px 15px;
+	margin-top: 50px;
+}
+
+.mcp-danger-zone h4 {
+	color: red;
+	font-size: .7rem;
+}
+
+.mcp-danger-zone p {
+	font-size: .7rem;
+}
+
+.mcp-adstxt-enabled .mcp-display-on-disabled {
+	display: none;
+}
+
+.mcp-adstxt-disabled .mcp-display-on-enabled {
+	display: none;
+}
+
+.mcp-adstxt-method-write .mcp-display-on-redirect {
+	display: none;
+}
+
+.mcp-adstxt-method-redirect .mcp-display-on-write {
+	display: none;
+}
+
+.mcp-adstxt-method-none .mcp-display-on-write,
+.mcp-adstxt-method-none .mcp-display-on-redirect {
+	display: none;
+}
